@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `$https://trendify-pi.vercel.app/api/v1/auth/login`,
+        `https://trendify-pi.vercel.app/api/v1/auth/login`,
         {
           email,
           password,

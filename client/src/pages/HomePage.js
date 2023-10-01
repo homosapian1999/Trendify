@@ -24,7 +24,7 @@ const HomePage = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        `$https://trendify-pi.vercel.app/api/v1/category/get-category`
+        `https://trendify-pi.vercel.app/api/v1/category/get-category`
       );
       if (data?.success) {
         setCategories(data?.category);
